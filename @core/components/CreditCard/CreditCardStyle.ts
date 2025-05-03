@@ -25,6 +25,7 @@ export const Right = styled.div`
 
 export const Card = styled.div`
   width: 100%;
+  max-width: 500px;
   height: 280px;
 
   perspective: 1000;
