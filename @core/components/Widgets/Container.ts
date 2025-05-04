@@ -7,10 +7,7 @@ export default styled.section`
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 12px;
-  min-width: 600px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 
   header {
     display: flex;

@@ -7,7 +7,7 @@ export const BackgroundContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 500px;
-  height: 300px;
+  min-height: 300px;
   border-radius: 12px;
   margin-top: 30px;
   background: url("/noaa-p9BRX1mBfe4-unsplash-compress.png") no-repeat;
@@ -39,12 +39,13 @@ export const BackgroundContainer = styled.div`
     margin: 0;
   }
   p {
-    line-height: 2;
+    line-height: 1, 5;
   }
 
   h4 {
     color: #fff700;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    line-height: 1.7rem;
   }
 
   h3 {
@@ -56,6 +57,7 @@ export const BackgroundContainer = styled.div`
 
   h4 span {
     font-size: 1.5rem;
+    line-height: 0;
   }
 
   #tit-local-temp-container {
@@ -64,7 +66,6 @@ export const BackgroundContainer = styled.div`
     flex-wrap: nowrap;
     width: 100%;
     max-height: 90%;
-    /* padding: 8px; */
   }
 
   #info-weather-container {
@@ -80,7 +81,7 @@ export const BackgroundContainer = styled.div`
   }
   #local-temp-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
@@ -130,7 +131,6 @@ export const BackgroundContainer = styled.div`
       flex-wrap: wrap;
       width: 100%;
       max-height: 90%;
-      /* padding: 8px; */
     }
   }
 `;
