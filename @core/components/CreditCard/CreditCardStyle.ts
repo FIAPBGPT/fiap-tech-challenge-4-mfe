@@ -238,7 +238,7 @@ export const CardHolder = styled.div`
 `;
 
 export const CardLimitBar = styled.div`
-  width: 190px;
+  max-width: 135px;
 `;
 
 export const LabelLimit = styled.div`
