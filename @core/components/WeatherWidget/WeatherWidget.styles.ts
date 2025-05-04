@@ -29,7 +29,6 @@ export const BackgroundContainer = styled.div`
     background: lin + ar-gradient(to top, #004d61, transparent 60%, #004d61);
     padding: 5%;
     border-radius: 12px;
-    border: 1px solid black;
   }
 
   p,
@@ -63,7 +62,7 @@ export const BackgroundContainer = styled.div`
   #tit-local-temp-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     max-height: 90%;
   }
@@ -81,12 +80,12 @@ export const BackgroundContainer = styled.div`
   }
   #local-temp-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
-    margin-left: 5%;
-    width: 50%;
+    flex:1;
+    min-width: 50%;
   }
   #habilitar-local-container {
     display: flex;
@@ -128,7 +127,6 @@ export const BackgroundContainer = styled.div`
     #tit-local-temp-container {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
       width: 100%;
       max-height: 90%;
     }
