@@ -77,7 +77,6 @@ export default function WeatherWidget() {
         }
       );
       setWeather(response.data);
-      console.log(response.data);
     } catch (error) {
       console.error("Erro ao buscar dados do clima:", error);
     }
