@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export default styled.section`
   background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 12px;
-  min-width: 315px;
+  width: 100%;
 
   header {
     display: flex;

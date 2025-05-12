@@ -31,7 +31,7 @@ export default function WeatherWidget() {
       return (
         <>
           <div id="tit-local-temp-container">
-            <div>
+            <div style={{marginRight: 15}}>
               <h3>O TEMPO</h3>
               <h4 style={{ lineHeight: 0.8 }}>AGORA</h4>
               <div id="description-container">
