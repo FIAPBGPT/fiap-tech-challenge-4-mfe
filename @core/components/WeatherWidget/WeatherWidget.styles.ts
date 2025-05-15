@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
 export const BackgroundContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 315px;
-  max-width: 450px;
   min-height: 280px;
   border-radius: 12px;
   margin-top: 30px;
@@ -24,8 +18,6 @@ export const BackgroundContainer = styled.div`
   #gradiente {
     width: 100%;
     height: 100%;
-    min-width: 315px;
-    max-width: 450px;
     background: linear-gradient(to top, #004d61, transparent 60%, #004d61);
     padding: 20px;
     border-radius: 12px;
@@ -38,7 +30,7 @@ export const BackgroundContainer = styled.div`
     text-shadow: 0.1rem 0.1rem 0.5rem #000000;
     margin: 0;
   }
-  p{
+  p {
     line-height: 2;
   }
 
@@ -81,8 +73,6 @@ export const BackgroundContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 50%;
-    height: 50%;
     margin: 0;
     text-align: left;
   }
