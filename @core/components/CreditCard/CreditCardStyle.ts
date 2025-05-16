@@ -233,8 +233,8 @@ export const CardNumber = styled.div`
     font-size: 25px;
   }
 
-  @media (min-width: 768px) {
-    font-size: 18px;
+  @media (min-width: 720px) {
+    font-size: 30px;
   }
 
   @media (min-width: 992px) {
@@ -255,12 +255,16 @@ export const CardHolder = styled.div`
 export const CardLimitBar = styled.div`
   width: 67%;
 
+  @media (min-width: 360px) {
+    width: 42%;
+  }
+
   @media (min-width: 576px) {
     width: 74%;
   }
 
-  @media (min-width: 768px) {
-    width: 29%;
+  @media (min-width: 720px) {
+    width: 74%;
   }
 
   @media (min-width: 992px) {
@@ -278,12 +282,17 @@ export const LabelLimit = styled.div`
 
 export const LabelLimitValue = styled.div`
   font-size: 14px;
+
+  @media (min-width: 360px) {
+    font-size: 12px;
+  }
+
   @media (min-width: 576px) {
     font-size: 14px;
   }
 
-  @media (min-width: 768px) {
-    font-size: 7px;
+  @media (min-width: 720px) {
+    font-size: 14px;
   }
 
   @media (min-width: 992px) {
