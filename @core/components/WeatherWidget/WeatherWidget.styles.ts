@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const BackgroundContainer = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   max-width: 500px;
-  min-height: 300px;
+  height: 280px;
   border-radius: 12px;
   margin-top: 30px;
   background: url("/noaa-p9BRX1mBfe4-unsplash-compress.png") no-repeat;
@@ -39,7 +38,6 @@ export const BackgroundContainer = styled.div`
     margin: 0;
   }
   p {
-
     line-height: 1, 5;
   }
 
@@ -87,7 +85,7 @@ export const BackgroundContainer = styled.div`
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
-    flex:1;
+    flex: 1;
     min-width: 50%;
   }
   #habilitar-local-container {
