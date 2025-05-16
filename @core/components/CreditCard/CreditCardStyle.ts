@@ -229,6 +229,22 @@ export const CardNumber = styled.div`
   margin: 10px 25px 10px;
   font-size: 23px;
   font-family: "cc font", monospace;
+
+  @media (min-width: 576px) {
+    font-size: 25px;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 23px;
+  }
 `;
 
 export const CardHolder = styled.div`
@@ -238,7 +254,27 @@ export const CardHolder = styled.div`
 `;
 
 export const CardLimitBar = styled.div`
-  max-width: 135px;
+  width: 67%;
+
+  @media (min-width: 360px) {
+    width: 42%;
+  }
+
+  @media (min-width: 576px) {
+    width: 74%;
+  }
+
+  @media (min-width: 720px) {
+    width: 74%;
+  }
+
+  @media (min-width: 992px) {
+    width: 35%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 55%;
+  }
 `;
 
 export const LabelLimit = styled.div`
@@ -247,4 +283,24 @@ export const LabelLimit = styled.div`
 
 export const LabelLimitValue = styled.div`
   font-size: 14px;
+
+  @media (min-width: 360px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 576px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 9px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
 `;

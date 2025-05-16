@@ -4,6 +4,7 @@ import { BackgroundContainer } from "./WeatherWidget.styles";
 import { useEffect, useState } from "react";
 
 import axios from "axios";
+import { Col, Row } from "react-bootstrap";
 
 export default function WeatherWidget() {
   const APIKEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
@@ -37,15 +38,18 @@ export default function WeatherWidget() {
               <div id="description-container">
                 <p>{weather.weather[0].description}</p>
               </div>
-            </div>
-            <div id="local-temp-container" className="infos-containers">
-              <p>{weather.name}</p>
-              <h4>
-                {weather.main.temp.toFixed(1)}
-                <span> °C</span>
-              </h4>
-            </div>
-          </div>
+            </Col>
+            <Col xs={12} sm={3} md={12} lg={12} xl={6}>
+              <div id="local-temp-container" className="infos-containers">
+                <p>{weather.name}</p>
+                <h4>
+                  {weather.main.temp.toFixed(1)}
+                  <span> °C</span>
+                </h4>
+              </div>
+            </Col>
+            {/* </div> */}
+          </Row>
           <div className="espaçador-vert"></div>
           <div id="desc-info-container" className="infos-containers">
             <div>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const BackgroundContainer = styled.div`
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -26,7 +27,7 @@ export const BackgroundContainer = styled.div`
     width: 100%;
     max-width: 100%;
     height: 100%;
-    background: lin + ar-gradient(to top, #004d61, transparent 60%, #004d61);
+    background: linear-gradient(to top, #004d61, transparent 60%, #004d61);
     padding: 5%;
     border-radius: 12px;
   }
@@ -38,6 +39,7 @@ export const BackgroundContainer = styled.div`
     margin: 0;
   }
   p {
+
     line-height: 1, 5;
   }
 
@@ -80,6 +82,7 @@ export const BackgroundContainer = styled.div`
   }
   #local-temp-container {
     display: flex;
+
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
