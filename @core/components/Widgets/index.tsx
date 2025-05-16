@@ -80,7 +80,7 @@ const WidgetCardTCF: React.FC<WidgetsCardProps> = ({
           )}
         </Col>
         <Col xs={12} sm={12} md={12} lg={12}>
-        {widgetsState.weather && <WeatherWidget />}
+          {widgetsState.weather && <WeatherWidget />}
         </Col>
       </Row>
     );

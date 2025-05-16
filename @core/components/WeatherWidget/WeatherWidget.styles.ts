@@ -1,13 +1,21 @@
 import styled from "styled-components";
 
 export const BackgroundContainer = styled.div`
-  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 300px;
   border-radius: 12px;
   margin-top: 30px;
-  background: url("/noaa-p9BRX1mBfe4-unsplash.png") no-repeat;
+  background: url("/noaa-p9BRX1mBfe4-unsplash-compress.png") no-repeat;
   background-size: cover;
   color: #ffffff;
   text-align: left;
+  box-sizing: border-box;
 
   * {
     margin: 0;
@@ -17,11 +25,11 @@ export const BackgroundContainer = styled.div`
 
   #gradiente {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     background: linear-gradient(to top, #004d61, transparent 60%, #004d61);
-    padding: 20px;
+    padding: 5%;
     border-radius: 12px;
-    border: 1px solid black;
   }
 
   p,
@@ -31,12 +39,14 @@ export const BackgroundContainer = styled.div`
     margin: 0;
   }
   p {
-    line-height: 2;
+
+    line-height: 1, 5;
   }
 
   h4 {
     color: #fff700;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    line-height: 1.7rem;
   }
 
   h3 {
@@ -48,14 +58,15 @@ export const BackgroundContainer = styled.div`
 
   h4 span {
     font-size: 1.5rem;
+    line-height: 0;
   }
 
   #tit-local-temp-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     max-height: 90%;
-    padding: 8px;
   }
 
   #info-weather-container {
@@ -71,10 +82,13 @@ export const BackgroundContainer = styled.div`
   }
   #local-temp-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     text-align: left;
+    flex:1;
+    min-width: 50%;
   }
   #habilitar-local-container {
     display: flex;
@@ -106,5 +120,18 @@ export const BackgroundContainer = styled.div`
     box-shadow: 0 0 15px #00000080;
     border-radius: 12px;
     padding: 15px;
+  }
+  @media (max-width: 360px) {
+    #local-temp-container {
+      margin-top: 10px;
+      margin-left: 0px;
+      flex: 1;
+    }
+    #tit-local-temp-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-height: 90%;
+    }
   }
 `;

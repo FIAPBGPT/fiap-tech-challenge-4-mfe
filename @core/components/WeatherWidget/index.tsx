@@ -31,15 +31,12 @@ export default function WeatherWidget() {
     } else {
       return (
         <>
-          <Row>
-            {/* <div id="tit-local-temp-container"> */}
-            <Col xs={12} sm={9} md={12} lg={12} xl={6}>
-              <div>
-                <h3>O TEMPO</h3>
-                <h4 style={{ lineHeight: 0.8 }}>AGORA</h4>
-                <div id="description-container">
-                  <p>{weather.weather[0].description}</p>
-                </div>
+          <div id="tit-local-temp-container">
+            <div style={{marginRight: 15}}>
+              <h3>O TEMPO</h3>
+              <h4 style={{ lineHeight: 0.8 }}>AGORA</h4>
+              <div id="description-container">
+                <p>{weather.weather[0].description}</p>
               </div>
             </Col>
             <Col xs={12} sm={3} md={12} lg={12} xl={6}>
