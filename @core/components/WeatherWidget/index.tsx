@@ -33,7 +33,7 @@ export default function WeatherWidget() {
         <>
           <Row>
             {/* <div id="tit-local-temp-container"> */}
-            <Col xs={12} sm={12} md={12} lg={12} xl={6}>
+            <Col xs={12} sm={9} md={12} lg={12} xl={6}>
               <div>
                 <h3>O TEMPO</h3>
                 <h4 style={{ lineHeight: 0.8 }}>AGORA</h4>
@@ -42,7 +42,7 @@ export default function WeatherWidget() {
                 </div>
               </div>
             </Col>
-            <Col xs={12} sm={12} md={12} lg={12} xl={6}>
+            <Col xs={12} sm={3} md={12} lg={12} xl={6}>
               <div id="local-temp-container" className="infos-containers">
                 <p>{weather.name}</p>
                 <h4>

@@ -260,15 +260,15 @@ export const CardLimitBar = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: 32%;
+    width: 29%;
   }
 
   @media (min-width: 992px) {
-    width: 38%;
+    width: 35%;
   }
 
   @media (min-width: 1200px) {
-    width: 63%;
+    width: 55%;
   }
 `;
 
@@ -283,11 +283,11 @@ export const LabelLimitValue = styled.div`
   }
 
   @media (min-width: 768px) {
-    font-size: 9px;
+    font-size: 7px;
   }
 
   @media (min-width: 992px) {
-    font-size: 11px;
+    font-size: 9px;
   }
 
   @media (min-width: 1200px) {
