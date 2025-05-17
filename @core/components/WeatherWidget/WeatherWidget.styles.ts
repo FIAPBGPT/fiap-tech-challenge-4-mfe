@@ -7,7 +7,6 @@ export const BackgroundContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 500px;
-  height: 280px;
   border-radius: 12px;
   margin-top: 30px;
   background: url("/noaa-p9BRX1mBfe4-unsplash-compress.png") no-repeat;
